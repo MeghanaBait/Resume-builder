@@ -404,11 +404,10 @@ a{
 }
 
 .cv-form-row-title{
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-purple);
     padding: 0.8rem 1.6rem;
     margin-bottom: 2rem;
     border-radius: 10px;
-    border: 2px solid var(--color-purple);
 }
 
 .cv-form-row-title h3{
@@ -521,8 +520,8 @@ textarea{
     text-align: center;
 }
 .preview-image{
-    width: 120px;
-    height: 120px;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     overflow: hidden;
     margin-right: auto;
@@ -563,9 +562,13 @@ textarea{
     margin-bottom: 1rem;
 }
 .preview-blk-list .preview-item{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.2rem;
     opacity: 0.95;
+}
+.preview-blk-list .preview-item i{
+    margin-right: 1rem;
 }
 .preview-cnt-r .preview-blk-title{
     color: var(--color-dark);
@@ -574,19 +577,24 @@ textarea{
     margin-top: 1.8rem;
 }
 
+
+
 .achievements-items.preview-blk-list .preview-item span:first-child,
 .educations-items.preview-blk-list .preview-item span:first-child,
-.experiences-items.preview-blk-list .preview-item span:first-child{
+.experiences-items.preview-blk-list .preview-item span:first-child
+.skills-items.preview-blk-list .preview-item span:first-child{
     display: block;
     font-weight: 600;
     margin-bottom: 1rem;
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+
 .educations-items.preview-blk-list .preview-item span:nth-child(2),
 .experiences-items.preview-blk-list .preview-item span:nth-child(2){
     font-weight: 600;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .educations-items.preview-blk-list .preview-item span:nth-child(3),
@@ -599,9 +607,9 @@ textarea{
 .educations-items.preview-blk-list .preview-item span:nth-child(5),
 .experiences-items.preview-blk-list .preview-item span:nth-child(4),
 .experiences-items.preview-blk-list .preview-item span:nth-child(5){
-    margin-right: 1rem;
-    background-color: var(--color-green);
-    color: var(--color-white);
+    margin-right: 2rem;
+    background-color: rgba(var(--color-green),0.9);
+    color: var(--color-dark);
     padding: 0 1rem;
     border-radius: 0.6rem;
 }
@@ -616,6 +624,11 @@ textarea{
 .projects-items.preview-blk-list .preview-item span{
     display: block;
 }
+
+.projects-items.preview-blk-list .preview-item span:first-child{
+    font-weight: 600;
+}
+
 
 @media screen and (min-width: 768px){
     .cols-3{
