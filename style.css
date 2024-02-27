@@ -311,12 +311,17 @@ a{
 }
 
 .section-2 .section-2-items{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */
+    gap:50px;
 }
 
 .section-2-item{
+    min-height: 300px;
     max-width: 350px;
     text-align: center;
     margin: 0 auto;
@@ -650,6 +655,12 @@ textarea{
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .section-2-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .print-btn-sc{
     margin: 2rem 0 6rem 0;
 }
@@ -676,3 +687,4 @@ textarea{
         overflow: hidden;
     }
 }
+
